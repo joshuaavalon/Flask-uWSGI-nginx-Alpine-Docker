@@ -145,5 +145,7 @@ COPY supervisord.ini /etc/supervisor.d/
 COPY app.conf /etc/nginx/conf.d/
 COPY uwsgi.ini /etc/uwsgi/
 
+EXPOSE 80
+
 CMD ["/usr/bin/supervisord"]
 
